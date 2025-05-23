@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow</title>
+
+    <style>
+      .satu {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        margin: 20px;
+        display: inline-block;
+        box-shadow: 5px 5px 5px black;
+      }
+
+      .dua {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        margin: 20px;
+        box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.75);
+        display: inline-block;
+      }
+
+      .tiga {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        display: inline-block;
+        margin: 20px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.75);
+      }
+
+      .empat {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        display: inline-block;
+        margin: 20px;
+        box-shadow: inset 0px 0px 5px 5px black;
+      }
+
+      .lima {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        display: inline-block;
+        margin: 20px;
+        box-shadow: inset 0px 0px 0px 10px black, 0px 0px 0px 10px blue;
+      }
+    </style></head
+  >-
+  <body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <!--Ini untuk <spread>-->
+    <div class="empat"></div>
+    <!--Ini untuk inset-->
+    <div class="lima"></div>
+    <!--Ini untuk multiply shadow-->
+  </body>
+</html>
+
+<!-- tag div dengan class "satu" menggunakan warna solid -->
+<!-- tag div dengan class "dua" menggunakan warna rgba -->

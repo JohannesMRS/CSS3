@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      .kotakScale {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(21, 173, 219);
+        transition: 0.3s;
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      .kotakScale:hover {
+        transform: scale(1.2);
+      }
+
+      .pKotakScale {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 60px;
+      }
+
+      .kotakScaleX {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(21, 136, 159);
+        display: inline-block;
+        margin-left: 50px;
+        transition: 0.3s;
+      }
+
+      .kotakScaleX:hover {
+        transform: scaleX(1.2);
+      }
+
+      .pKotakScaleX {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 75px;
+      }
+
+      .kotakScaleY {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(21, 136, 159);
+        display: inline-block;
+        margin-left: 50px;
+        transition: 0.3s;
+      }
+
+      .kotakScaleY:hover {
+        transform: scaleY(1.2);
+      }
+
+      .pKotakScaleY {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 75px;
+      }
+
+      .kotakRotate {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+        margin-top: 50px;
+        margin-left: 20px;
+        transition: 0.3s;
+        display: inline-block;
+      }
+
+      .kotakRotate:hover {
+        transform: rotate(45deg);
+      }
+
+      .pKotakRotate {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 45px;
+      }
+
+      .kotakRotateNegative {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(97, 195, 162);
+        margin-top: 50px;
+        margin-left: 50px;
+        transition: 0.3s;
+        display: inline-block;
+      }
+
+      .kotakRotateNegative:hover {
+        transform: rotate(-45deg);
+      }
+
+      .pKotakRotateNegative {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 45px;
+      }
+
+      .kotakRotateX {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(85, 167, 140);
+        margin-top: 50px;
+        margin-left: 50px;
+        transition: 0.3s;
+        display: inline-block;
+      }
+
+      .kotakRotateX:hover {
+        transform: rotateX(60deg);
+      }
+      .pKotakRotateX {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 70px;
+      }
+
+      .kotakRotateY {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(67, 127, 107);
+        margin-top: 50px;
+        margin-left: 50px;
+        transition: 0.3s;
+        display: inline-block;
+      }
+
+      .kotakRotateY:hover {
+        transform: rotateY(60deg);
+      }
+      .pKotakRotateY {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scale">
+      <div class="kotakScale">
+        <p class="pKotakScale">Scale Biasa</p>
+      </div>
+      <div class="kotakScaleX">
+        <p class="pKotakScaleX">ScaleX</p>
+      </div>
+      <div class="kotakScaleY">
+        <p class="pKotakScaleY">ScaleY</p>
+      </div>
+    </div>
+
+    <div class="rotate">
+      <div class="kotakRotate">
+        <p class="pKotakRotate">Rotate 45 degree</p>
+      </div>
+      <div class="kotakRotateNegative">
+        <p class="pKotakRotateNegative">Rotate (-45) degree</p>
+      </div>
+      <div class="kotakRotateX">
+        <p class="pKotakRotateX">Rotate X</p>
+      </div>
+      <div class="kotakRotateY">
+        <p class="pKotakRotateY">Rotate Y</p>
+      </div>
+    </div>
+  </body>
+</html>

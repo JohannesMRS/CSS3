@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Gradient</title>
+    <style>
+      .satu {
+        width: 300px;
+        height: 600px;
+        margin: 80px 0px 0px 200px;
+        background-image: radial-gradient(
+          circle farthest-side at top left,
+          red,
+          blue
+        );
+        display: inline-block;
+        position: absolute;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+      }
+
+      .dua {
+        width: 700px;
+        height: 200px;
+        margin: 80px 0px 0px 530px;
+        background-image: radial-gradient(
+          ellipse farthest-side at top right,
+          green,
+          yellow
+        );
+        display: inline-block;
+        position: absolute;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+      }
+
+      .tiga {
+        width: 200px;
+        height: 370px;
+        margin: 310px 0px 0px 530px;
+        background-image: radial-gradient(
+          circle farthest-side at bottom left,
+          blue 40%,
+          yellow
+        );
+        display: inline-block;
+        position: absolute;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+      }
+
+      .empat {
+        width: 470px;
+        height: 370px;
+        margin: 310px 0px 0px 760px;
+        background-image: radial-gradient(
+          circle farthest-corner at top right,
+          green,
+          yellow,
+          blue
+        );
+        display: inline-block;
+        position: absolute;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+    <div class="tiga"></div>
+    <div class="empat"></div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGBA</title>
+
+    <style>
+      body {
+        background-image: url(img/bg.jpg);
+      }
+      .satu {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255, 0, 0, 0.5);
+        position: relative;
+      }
+
+      .satu-dua {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 150, 0);
+        position: absolute;
+        margin-top: 175px;
+        margin-left: 175px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="satu">
+      <div class="satu-dua"></div>
+    </div>
+  </body>
+</html>
+
+<!-- bisa kita lihat apda contoh diatas, yang dimana
+ tag child tidak akan terkena dampak dari properti opacity
+ pada tag parents -->
+<!-- Jika di properti opacity, tag child 
+ dari sebuah tag parents, akan terkena dampak properti
+ opacity, maka cara mengakalakinya ialah menggunakan
+ properti RGBa -->
+<!-- RGBa adalah singkatan dari (Red, Green, Blue, alpha)
+  yang dimana kita bisa mengatur transparansi sama seperti
+  opacity -->
