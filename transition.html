@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        border: 2px solid black;
+        transition: 0.7s;
+        text-align: center;
+        line-height: 100px;
+        font-size: 10px;
+      }
+
+      .box:hover {
+        transform: rotate(720deg);
+        margin-left: 800px;
+      }
+
+      .container {
+        width: 900px;
+        margin: 10px auto;
+        border: 5px solid black;
+        margin-top: 50px;
+      }
+
+      .boxWithContainer {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 2px solid black;
+        transition: 1s;
+        text-align: center;
+        line-height: 100px;
+        font-size: 10px;
+      }
+
+      .container:hover .boxWithContainer {
+        transform: scale(1.7);
+        margin-left: 800px;
+        background-color: blue;
+      }
+
+      .containerExample {
+        width: 900px;
+        margin: 10px auto;
+        border: 5px solid black;
+      }
+      .example {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        text-align: center;
+        line-height: 100px;
+        font-size: 13px;
+        margin: 10px 0;
+      }
+
+      .containerExample:hover .example {
+        transform: rotate(360deg);
+        margin-left: 800px;
+      }
+
+      .Ease {
+        transition: 1s ease;
+      }
+      .EaseIn {
+        transition: 1s ease-In;
+      }
+      .EaseOut {
+        transition: 1s ease-out;
+      }
+      .EaseInOut {
+        transition: 1s ease-in-out;
+      }
+      .Linear {
+        transition: 3s linear(0.24, -0.35, 0.81, 1.35);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box without container</div>
+
+    <div class="container">
+      <div class="boxWithContainer">box with container</div>
+    </div>
+
+    <div class="containerExample">
+      <div class="example Ease">Ease</div>
+      <div class="example EaseIn">Ease-In</div>
+      <div class="example EaseOut">Ease-Out</div>
+      <div class="example EaseInOut">Ease-In-Out</div>
+      <div class="example Linear">Linear</div>
+    </div>
+  </body>
+</html>

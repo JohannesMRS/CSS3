@@ -147,6 +147,120 @@
         position: absolute;
         margin-left: 70px;
       }
+
+      .kotakSkew {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(100, 25, 214);
+        margin-top: 50px;
+        margin-left: 20px;
+        transition: 0.3s;
+        display: inline-block;
+      }
+      .kotakSkew:hover {
+        transform: skew(45deg);
+      }
+      .pKotakSkew {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 50px;
+      }
+
+      .kotakSkewNegative {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(128, 30, 214);
+        margin-top: 50px;
+        margin-left: 50px;
+        transition: 0.3s;
+        display: inline-block;
+      }
+      .kotakSkewNegative:hover {
+        transform: skew(-45deg);
+      }
+      .pKotakSkewNegative {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 40px;
+      }
+
+      .kotakSkewY {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(99, 26, 188);
+        margin-top: 50px;
+        margin-left: 50px;
+        transition: 0.3s;
+        display: inline-block;
+      }
+      .kotakSkewY:hover {
+        transform: skewY(45deg);
+      }
+      .pKotakSkewY {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 70px;
+      }
+
+      .kotakTranslate {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(24, 224, 137);
+        margin-top: 50px;
+        margin-left: 20px;
+        transition: 0.3s;
+        display: inline-block;
+      }
+      .kotakTranslate:hover {
+        transform: translate(20px);
+      }
+      .pKotakTranslate {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 65px;
+      }
+
+      .kotakTranslateNegative {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(21, 193, 118);
+        margin-top: 50px;
+        margin-left: 50px;
+        transition: 0.3s;
+        display: inline-block;
+      }
+      .kotakTranslateNegative:hover {
+        transform: translateX(-20px);
+      }
+      .pKotakTranslateNegative {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 65px;
+      }
+
+      .kotakTranslateY {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(16, 135, 83);
+        margin-top: 50px;
+        margin-left: 50px;
+        transition: 0.3s;
+        display: inline-block;
+      }
+      .kotakTranslateY:hover {
+        transform: translateY(20px);
+      }
+      .pKotakTranslateY {
+        margin-top: 90px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 70px;
+      }
     </style>
   </head>
   <body>
@@ -174,6 +288,30 @@
       </div>
       <div class="kotakRotateY">
         <p class="pKotakRotateY">Rotate Y</p>
+      </div>
+    </div>
+
+    <div class="skew">
+      <div class="kotakSkew">
+        <p class="pKotakSkew">Skew 45 degree</p>
+      </div>
+      <div class="kotakSkewNegative">
+        <p class="pKotakSkewNegative">Skew (-45) degree</p>
+      </div>
+      <div class="kotakSkewY">
+        <p class="pKotakSkewY">Skew Y</p>
+      </div>
+    </div>
+
+    <div class="translate">
+      <div class="kotakTranslate">
+        <p class="pKotakTranslate">Translate</p>
+      </div>
+      <div class="kotakTranslateNegative">
+        <p class="pKotakTranslateNegative">Translate X</p>
+      </div>
+      <div class="kotakTranslateY">
+        <p class="pKotakTranslateY">Translate Y</p>
       </div>
     </div>
   </body>

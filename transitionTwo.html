@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Part 2</title>
+    <style>
+      .container {
+        width: 900px;
+        border: 2px solid black;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        text-align: center;
+        line-height: 100px;
+        margin: 10px 0px;
+      }
+
+      .box1 {
+        transition: 1.9s all ease 0.2s;
+      }
+      .box2 {
+        transition: 1.9s all ease-in 0.2s;
+      }
+      .box3 {
+        transition: 1.9s all ease-in-out 0.2s;
+      }
+      .box4 {
+        transition: 1.9s all ease-out 0.2s;
+      }
+      .box5 {
+        transition: 1.9s all linear 0.2s;
+      }
+      .box6 {
+        transition: 1.9s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+      }
+      .box7 {
+        transition: 1.9s transform 2s, margin-left 3s, background-color 2s;
+      }
+
+      .container:hover .box {
+        transform: rotate(720deg);
+        margin-left: 800px;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">ease</div>
+      <div class="box box2">ease-in</div>
+      <div class="box box3">ease-in-out</div>
+      <div class="box box4">ease-out</div>
+      <div class="box box5">linear</div>
+      <div class="box box6">cubic bezier</div>
+      <div class="box box7">multi-transition</div>
+    </div>
+  </body>
+</html>
