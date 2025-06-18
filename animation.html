@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      body {
+        height: 1300px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        margin: 20px auto;
+        position: absolute;
+      }
+
+      .boxSatu {
+        animation: animasiBox 3s ease 0.6s 2 reverse;
+      }
+
+      .boxDua {
+        animation: animasiBox 3s ease 0.6s 2 alternate;
+        margin-top: 370px;
+      }
+
+      .boxTiga {
+        animation: animasiBox 3s ease 0.6s 2 alternate-reverse;
+        margin-top: 720px;
+      }
+
+      @keyframes animasiBox {
+        0% {
+          width: 100px;
+        }
+
+        50% {
+          width: 500px;
+          height: 100px;
+        }
+        100% {
+          width: 500px;
+          height: 300px;
+        }
+      }
+
+      .textBoxDua {
+        margin-top: 330px;
+      }
+      .textBoxTiga {
+        margin-top: 330px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box boxSatu"></div>
+    <div class="box boxDua"></div>
+    <div class="box boxTiga"></div>
+    <p class="textBoxSatu">Reverse</p>
+    <p class="textBoxDua">Alternate</p>
+    <p class="textBoxTiga">Alternate-reverse</p>
+  </body>
+</html>
